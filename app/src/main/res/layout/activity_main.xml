@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter amount of money for today!"
+        android:text="Enter amount of money for daily spend!"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:textSize="20sp"
