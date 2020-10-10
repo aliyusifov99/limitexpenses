@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter amount of money for today!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        />
+
+    
+    <EditText
+        android:layout_width="250dp"
+        android:textSize="100sp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/customedittext"
+        android:id="@+id/numberEditText"
+        android:layout_marginTop="150dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/numberEditText"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonTarget"
+        android:text="set target"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTextView"
+        android:layout_below="@+id/buttonTarget"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Today"
+        />
+    
+    
+</RelativeLayout>
