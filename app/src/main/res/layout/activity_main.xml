@@ -10,47 +10,67 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter amount of money for daily spend!"
+        android:text="Goal:"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         />
-
-    
-    <EditText
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:textSize="100sp"
-        android:layout_height="150dp"
-        android:singleLine="true"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/customedittext"
-        android:id="@+id/numberEditText"
-        android:layout_marginTop="150dp"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custombutton"
-        android:layout_below="@+id/numberEditText"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/buttonTarget"
-        android:text="set goal"
-        android:onClick="setTarget"
-        android:textColor="@android:color/white"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dateTextView"
-        android:layout_below="@+id/buttonTarget"
-        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:text="Today"
+        android:layout_marginTop="30dp"
+        android:text="15"
+        android:textSize="100sp"
+        android:id="@+id/amountTextView"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/amountTextView"
+        android:background="@drawable/customedittext"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="60dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/editAmountExtract"
         />
-    
-    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/editAmountExtract"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonSubtract"
+        android:text="Subtract"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/buttonSubtract"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonReset"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/buttonReset"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonEditTarget"
+        android:text="Edit Goal"
+        android:textColor="@android:color/white"
+        android:onClick="editGoal"
+        />
+
+
+
+
 </RelativeLayout>
