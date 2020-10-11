@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorAccent">
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,9 +18,11 @@
 
     
     <EditText
+        android:inputType="number"
         android:layout_width="250dp"
         android:textSize="100sp"
         android:layout_height="150dp"
+        android:singleLine="true"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:background="@drawable/customedittext"
@@ -34,7 +37,8 @@
         android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/buttonTarget"
-        android:text="set target"
+        android:text="set goal"
+        android:onClick="setTarget"
         android:textColor="@android:color/white"/>
 
     <TextView
